@@ -40,7 +40,8 @@ header ul li{
     width: fit-content;
 }
 header ul li a{
-    transition: .3s;
+    transition: .3;
+    color: #000;
 }
 header ul li a:hover{
     color: #777;
@@ -126,6 +127,7 @@ header ul li{
     margin-left: 0;
 }
 }
+
 .active{
     display: flex;
 }
