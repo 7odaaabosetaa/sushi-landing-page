@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0%;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #fff2ec;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 70px;
+    padding: 0 50px 0 50px;
+    position: relative;
+}
+header .logo{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+header ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li{
+    color: #000;
+    margin-left: 20px;
+    font-size: 17px;
+    width: fit-content;
+}
+header ul li a{
+    transition: .3s;
+}
+header ul li a:hover{
+    color: #777;
+    font-size: 15px;
+}
+header i.fa-bars{
+    color: #000;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+/* start landing div */
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 70px);
+    padding: 0 100px;
+}
+.landing h3{
+    font-size: 30px;
+    color: #796c66;
+    text-transform: capitalize;
+}
+.landing h3 img{
+    transform: translateY(11px);
+}
+.landing p{
+    font-size: 18px;
+    line-height: 1.7;
+    margin-top: 20px;
+    
+}
+.landing button{
+    background-color: #f36726;
+    border-radius: 25px;
+    padding: 10px 20px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+}
+.landing .image{
+    max-width: 550px;
+}
+.landing .image img{
+    max-width: 100%;
+}
+@media (min-width: 992px){
+    .landing .image img{
+            max-width: 450px;
+    }
+}
+@media (min-width: 767px) {
+    .landing .image img{
+            max-width: 350px;
+    }
+}
+@media (max-width: 767px) {
+    .landing .image{
+    display: none;
+}
+header ul{
+    position: absolute;
+    right: 50px;
+    flex-direction: column;
+    top: 70px;
+    background-color: #f36726;
+    border-radius: 20px;
+    padding: 20px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+header i.fa-bars{
+    display: block;
+}
+header ul li{
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+}
+.active{
+    display: flex;
+}
